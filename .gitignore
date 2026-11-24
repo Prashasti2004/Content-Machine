@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+
+# Secrets
+.env
+
+# Generated content
+output/*
+!output/.gitkeep
+
+# Media you add locally (keep folders)
+assets/music/*
+!assets/music/.gitkeep
+assets/fonts/*
+!assets/fonts/.gitkeep
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/

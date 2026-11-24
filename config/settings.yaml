@@ -1,0 +1,27 @@
+# Global defaults. Series YAML can override voice/visuals/music per series.
+
+llm:
+  model: claude-opus-5-5
+  effort: high          # low | medium | high | xhigh | max
+  max_tokens: 16000
+
+scoring:
+  weights:
+    velocity: 0.45
+    engagement: 0.25
+    freshness: 0.15
+    relevance: 0.15
+  freshness_half_life_hours: 72
+  top_k_topics: 10
+
+render:
+  width: 1080
+  height: 1920
+  fps: 30
+  font: assets/fonts/Montserrat-Bold.ttf   # add your own font file
+  caption_font_size: 80
+  caption_words_per_chunk: 2
+
+paths:
+  output_dir: output
+  history_file: output/history.json

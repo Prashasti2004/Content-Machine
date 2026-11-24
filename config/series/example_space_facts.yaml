@@ -1,0 +1,32 @@
+id: example_space_facts
+name: "Space Facts in 60 Seconds"
+language: en
+region: IN
+audience: "curious teens and young adults"
+tone: "awe-inspiring, fast, a little funny"
+duration_seconds: 45
+
+sources:
+  youtube:
+    keywords: ["space facts", "black hole", "NASA", "universe shorts"]
+    max_results: 25
+    published_within_days: 7
+  instagram:
+    hashtags: ["spacefacts", "astronomy", "universe"]
+
+script:
+  hook_style: "question or shocking stat in the first 2 seconds"
+  cta: "Follow for a new space fact every day"
+  banned_topics: ["conspiracy theories"]
+
+voice:
+  provider: edge
+  voice_id: en-US-GuyNeural
+
+visuals:
+  provider: pexels
+  style: "cinematic space footage, nebulae, planets"
+
+music:
+  track: assets/music/ambient_space.mp3
+  volume: 0.12
